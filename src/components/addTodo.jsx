@@ -9,7 +9,7 @@ function AddTodo(props) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        props.addTodo( {text} );
+        props.addTodo( {text: text} );
         setText('');
     }
 

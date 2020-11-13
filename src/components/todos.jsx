@@ -11,9 +11,12 @@ export default function Todos(props) {
 
             { props.todos.map( todo => {
 
-                return <Todo key={todo.uuid} 
-                todo={todo}
-                changeTodo={props.changeTodo} />;
+                return <Todo key={todo.uuid}
+                    archived={props.archived}
+                    todo={todo}
+                    changeTodo={props.changeTodo}
+                    archiveTodo={props.archiveTodo} 
+                />;
 
             } ) }
 
