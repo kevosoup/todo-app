@@ -23,7 +23,7 @@ export default function Todo(props) {
             </button>
         </div> : <></> }
 
-        
+        { props.todo.archived ? console.log("alert") : <></> }
 
     </li>;
 
